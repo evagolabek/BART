@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'>
+</script>
+<link rel="stylesheet" href="jquery-ui.css">
+<script src="jquery-ui.js"></script>
+<script language="javascript" type="text/javascript"></script>
+<script src="script.js">
+
+$(document).ready(function(){
+    $("#dlg_hello").dialog();
+});
+</script>
+<link rel="stylesheet" href="style.css">
+
+<title>
+BART
+</title>
+
+</head>
+
+  <body>
+
+  <!-- here you can a file to play a sound when the balloon explodes or
+  a round is ended successfully: -->
+  <!-- 
+       <audio id="explosion_sound" src="explosion.wav" preload="auto"></audio>
+       <audio id="tada_sound" src="tada.wav" preload="auto"></audio>
+       -->
+  
+  <div id="dlg_hello">Hello World!</div>
+  <div id="round"></div>
+  <div id="bigbigwrap">
+	<div id="sliderwrap">
+	  <div id="showValue">Luftvorrat <br />(0 bis 30)</div>
+	  <div id="slider"></div>
+	</div> 
+	
+    <div id="bigwrap">
+
+	  
+	  <div id="ballonwrap">
+	    <div id="message"></div>
+	    <div id="gonext"></div>
+	    <img src="Balloon.png" id="ballon" alt="Ballon">
+	  </div>
+	  
+	  <button type="button" id="press"></button>
+	  <button type="button" id="collect"></button>
+	  <div id="total">
+	    <div id="total_term"></div>
+	    <div id="total_value"></div>
+	  </div>
+	  <button type="button" id="goOn">Weiter</button>
+
+    </div>
+  </div>
+    
+  <div id="saveThis1"></div>
+  <div id="saveThis2"></div>
+  <div id="saveThis3"></div>
+  
+  
+  </body>
+
+</html>
