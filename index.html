@@ -3,18 +3,13 @@
 <head>
 
 <meta charset="utf-8" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'>
 </script>
 <link rel="stylesheet" href="jquery-ui.css">
 <script src="jquery-ui.js"></script>
 <script language="javascript" type="text/javascript"></script>
-<script src="script.js">
-
-$(document).ready(function(){
-    $("#dlg_hello").dialog();
-});
-</script>
+<script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
 
 <title>
@@ -22,40 +17,176 @@ BART
 </title>
 
 </head>
+<style type="text/css">
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+
+#round {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 135%;
+}
+
+#message {
+  margin-top: 20px;
+  padding: 10px;
+  line-height: 1.3;
+  font-size: 110%;
+}
+
+#round h2 {
+  margin-bottom: 0px;
+  padding: 1px;
+}
+
+#bigbigwrap {
+  width: 650px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bigwrap {
+  text-align: center;
+  width: 550px;
+  font-size: 135%;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  margin-top: 15px;
+
+}
+
+#sliderwrap {
+  height: 420px;
+  float: left;
+}
+
+#showValue {
+  margin-top: 200px;
+  text-align: right;
+}
+
+#slider {
+  height:150px;
+  float: right;
+  margin-top: 10px;
+  background-color: #9DE0AD;
+}
+
+
+.ui-state-disabled {
+   opacity: 1;
+}
+
+.ui-slider-handle {
+  text-align:center;
+  text-decoration: none;
+}
+
+.ui-slider-range { 
+  background-image:none;
+  background-color: #D2691E; 
+}
+
+
+#ballonwrap {
+  height: 420px;
+  border: solid black 1px;
+  border-radius: 5px;
+  width: 100%;
+  background: #fff;
+}
+
+#ballon {
+  height: 150px;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -380px;
+}
+
+
+#total {
+  display: table;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+#press, #goOn, #collect {
+  font-size:110%;
+  width: 100%;
+}
+
+#total_term, #total_value {
+  display: table-cell;
+  width: 50%;
+}
+
+#total_term {
+  text-align: right;
+}
+
+#press, #collect, #goOn, #gonext {
+  cursor: pointer;
+  background: #ddd;
+}
+
+#press:hover, #collect:hover, #goOn:hover, #gonext:hover {
+  background-color: #c2c2c2;
+}
+
+#gonext {
+  font-size: 110%;
+  border-radius: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+}
+
+#goOn {
+  display: none;
+}
+
+</style>
 
   <body>
 
-  <!-- here you can a file to play a sound when the balloon explodes or
-  a round is ended successfully: -->
-  <!-- 
-       <audio id="explosion_sound" src="explosion.wav" preload="auto"></audio>
-       <audio id="tada_sound" src="tada.wav" preload="auto"></audio>
-       -->
   
-  <div id="dlg_hello">Hello World!</div>
+
+  
   <div id="round"></div>
   <div id="bigbigwrap">
-	<div id="sliderwrap">
-	  <div id="showValue">Luftvorrat <br />(0 bis 30)</div>
-	  <div id="slider"></div>
-	</div> 
-	
+ 
     <div id="bigwrap">
 
-	  
-	  <div id="ballonwrap">
-	    <div id="message"></div>
-	    <div id="gonext"></div>
-	    <img src="Balloon.png" id="ballon" alt="Ballon">
-	  </div>
-	  
-	  <button type="button" id="press"></button>
-	  <button type="button" id="collect"></button>
-	  <div id="total">
-	    <div id="total_term"></div>
-	    <div id="total_value"></div>
-	  </div>
-	  <button type="button" id="goOn">Weiter</button>
+   
+   <div id="ballonwrap">
+     <div id="message"></div>
+     <div id="gonext"></div>
+     <img src="https://psychodpt.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_0JMO7zllSRQL8EK" id="ballon" alt="Ballon">
+   </div>
+   
+   <button type="button" id="press"></button>
+   <button type="button" id="collect"></button>
+   <div id="total">
+     <div id="total_term"></div>
+     <div id="total_value"></div>
+   </div>
+   <button type="button" id="goOn">Weiter</button>
 
     </div>
   </div>
@@ -66,5 +197,3 @@ BART
   
   
   </body>
-
-</html>
