@@ -19,24 +19,24 @@ $(document).ready(function() {
     var last_win = 0; // initialize variable that contains the win of the previous round
     
     // initialize language
-    var label_press = 'Ballon aufpumpen';
-    var label_collect = '$$$ einsammeln';
-    var label_balance = 'Gesamtguthaben:';
-    var label_last = 'Gewinn letzte Runde:';
-    var label_currency = ' Taler';
-    var label_header = 'Ballon-Spiel Runde ';
-    var label_gonext1 = 'Nächste Runde starten';
-    var label_gonext2 = 'Spiel beenden';
-    var msg_explosion1 = '<p>Der Ballon ist in dieser Runde nach dem ';
-    var msg_explosion2 = '. Mal Aufpumpen geplatzt. <p>Sie haben in dieser Runde kein Geld verdient.</p>';
+    var label_press = 'Inflate balloon';
+    var label_collect = 'Collect';
+    var label_balance = 'Total credit:';
+    var label_last = 'Win last round:';
+    var label_currency = ' points';
+    var label_header = 'Ballon Game Round ';
+    var label_gonext1 = 'Start next round';
+    var label_gonext2 = 'End game';
+    var msg_explosion1 = '<p> The balloon is exploded after pumping ';
+    var msg_explosion2 = '. times.</p> <p>Once inflated burst, you did not make any money this round</p>';
     
-    var msg_collect1 = '<p>Der Ballon ist nicht geplatzt!</p><p>Sie verdienen diese Runde ';
-    var msg_collect2 = ' Taler.</p><p> Das erspielte Geld ist sicher in der Bank.</p>';
+    var msg_collect1 = '<p> The balloon did not burst! </ p> <p> You deserve this round ';
+    var msg_collect2 = ' points. </ p> <p> The money earned is safe in the bank.</p>';
     
-    var msg_end1 = '<p>Damit ist dieser Teil der Studie abgeschlossen. Sie haben im Ballon-Spiel ';
-    var msg_end2 = ' Taler Gewinn gemacht. </p><p>Klicken Sie auf <i>Weiter</i>, um mit der Studie fortzufahren.</p>';
+    var msg_end1 = '<p> This completes this part of the study. You are in the balloon game ';
+    var msg_end2 = ' points made profit. </ p> <p> Click <i> Next </ i> to continue the study. </ p>';
     
-    var err_msg = 'Sie können erst Geld einsammeln, sobald Sie den Ballon mindestens einmal aufgepumpt haben. Betätigen Sie dazu den Button "Ballon aufpumpen."';
+    var err_msg = 'You can only collect money once you have inflated the balloon at least once. To do this, press the "Inflate balloon"';
   
   
     // initialize labels
